@@ -47,7 +47,7 @@ const config = {
   },
 
   entry: {
-    main: './src/index.tsx'
+    main: './index.tsx'
   },
 
   output: {
@@ -64,7 +64,7 @@ const config = {
       filename: 'index.html',
       title: info.TITLE,
       chunks: ['main'],
-      template: './src/index.html',
+      template: './index.html',
       templateParameters: { TITLE: info.TITLE },
       favicon: './src/img/favicon.ico'
     }),
