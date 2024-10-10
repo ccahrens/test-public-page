@@ -1,5 +1,5 @@
 import React, { Component, ChangeEvent, MouseEvent } from "react";
-import { Editor } from './Editor';
+//import { Editor } from './Editor';
 // import { isRecord } from "./record";
 
  //Indicates if debugging console statements are activated or not
@@ -49,7 +49,8 @@ export class App extends Component<{}, AppState> {
         <p>Soon, we will give a 30 minute lecture in early November on some of the best known techniques for solving TSPs (Traveling Salesman Problems). We will need to give enough details that the listener could code it.</p>
         <p>Here are some of the techniques we've considered so far, as well as related links.</p>
         <p>Guided Local Search: OR Tools (one of our softwares) already uses this! Nelson will research GLS.</p>
-        <p><a href="https://en.wikipedia.org/wiki/Simulated_annealing">Simulated Annealing:</a> OR Tools can also use this, but it won't be as good</p>
+        <p><a href="https://en.wikipedia.org/wiki/Simulated_annealing">Simulated Annealing:</a> OR Tools can also use this, but it won't be as good: Cin!</p>
+        <p>Cost Cheapest Arch (CC!)</p>
         <p><a href="https://developers.google.com/optimization/routing/routing_options">Routing Options from OR Tools</a>
             
         <p>In addition to the above, there are a few other resources that may be helpful in the future.</p>
@@ -71,7 +72,18 @@ export class App extends Component<{}, AppState> {
           onClick={this.doBackClick}>See our current to-do list!</button>
           </div>)
     }
-    throw new Error("that shouldn't happen!");
+}
+
+    // BACK FUNCTION
+
+// Allows the user to return to the welcome screen
+// from the building screen
+doBackClick = (): void => {
+  this.setState({page: "welcome"});
+}
+
+
+
 {/*   // LIST
 
   // Checks the status of our list request.
@@ -154,14 +166,6 @@ export class App extends Component<{}, AppState> {
     const name: string = val.name;
     this.setState({name: name, page: "build", curr: sq});  
   } */}
-
-  // BACK FUNCTION
-
-  // Allows the user to return to the welcome screen
-  // from the building screen
-  doBackClick = (): void => {
-    this.setState({page: "welcome"});
-  }
 
   // SAVE FUNCTION
 
