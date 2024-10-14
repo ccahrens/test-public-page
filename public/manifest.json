@@ -1,6 +1,6 @@
 {
-  "short_name": "Route Optimization App",
-  "name": "Route Optimization Test Public App",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#800080",
-  "background_color": "#d8bfd8"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
